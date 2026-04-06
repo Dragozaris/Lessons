@@ -5,17 +5,21 @@ body {
 }
 
 .page-header {
-    font-family: "DRKrapkaSquareExtraBold";
+    font-family: "DRKSquareExtraBold";
     text-align: center;
     color: rgb(27, 3, 236);
     font-size: 23px;
     text-shadow: 2px 2px 5px #000, 5px -2px 10px red;
 }
 
-h2 {
+h2:not(.subtitle) {
     color: rgb(0, 89, 255);
+    text-align: center;
+    text-decoration-style: solid;
     
-    
+}
+.section p {
+  margin-bottom: 8px;
 }
 
 
@@ -112,12 +116,15 @@ h2 {
 
 .deco-underline {
     text-decoration: underline;
+    text-decoration-color: purple;
 }
 
 
 .deco-overline {
     text-decoration: overline;
+    text-decoration-color: green;
 }
+
 
 
 .deco-line-through {
@@ -129,7 +136,26 @@ h2 {
     text-decoration: none;
 }
 
+.deco-wavy{
+text-decoration: underline;
+text-decoration-color: orangered;
+text-decoration-style: wavy;
+}
 
+.deco-dashed{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: dashed;}
+.deco-dotted{
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-style: dotted;}
+.deco-double{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;}
+
+    
 /* Встановлення типу (регістр) літер (прописні або з великої літери) */
 
 
