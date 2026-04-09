@@ -5,7 +5,7 @@ body {
 }
 
 .page-header {
-    font-family: "DRKSquareExtraBold";
+    font-family: "DR Krapka Square";
     text-align: center;
     color: rgb(27, 3, 236);
     font-size: 23px;
@@ -19,7 +19,7 @@ h2:not(.subtitle) {
     
 }
 .section p {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -199,7 +199,6 @@ text-decoration-style: wavy;
 }
 
 .subtitle{
-    font-family: "DM Sans", sans-serif;
     font-size: 50px;
     letter-spacing: -1.26px;
     color: #131313;
@@ -207,7 +206,6 @@ text-decoration-style: wavy;
 
 
 .subtitle span{
-    font-family: "DM Sans", sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: -1.26px;
@@ -215,7 +213,6 @@ text-decoration-style: wavy;
 }
 
 .info{
-    font-family: "DM Sans", sans-serif;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.5px;
