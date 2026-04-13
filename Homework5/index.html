@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header>
+      <h1>
+        Заняття 5 CSS властивості блоків, відступи між елементами margin та
+        padding
+      </h1>
+    </header>
+    <main>
+      <!-- Відступи padding -->
+      <section>
+        <h2>Відступи padding</h2>
+        <p>
+          Властивість padding — це внутрішній відступ. Використовується для
+          відступів від кордону блоку всередину блоку (елементу), а не між
+          блоками (елементами). Значення можуть бути лише додатними, тобто
+          більше або рівне нулю.
+        </p>
+        <div class="padding">
+          <p class="padding-all">Значенням "padding: 20px;" з усіх сторін</p>
+          <p class="padding-vertical">
+            Значенням "padding: 30px;" зверху та знизу сторін
+          </p>
+          <p class="padding-four">Значенням "padding: 30px 20px 50px 10px"</p>
+          <p class="padding-top">Приклад запису лише 1 сторони</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Відступ padding до строкового об'єкту зліва</h2>
+        <span
+          >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam rerum,
+          est totam excepturi ullam ducimus facilis unde!
+        </span>
+      </section>
+      <!-- Відступи margin -->
+      <section>
+        <h2>Відступи margin</h2>
+        <p>
+          Властивість margin — Зовнішній відступ. Використовується для відступів
+          між блоками (елементами), рекомендується робити відступи зверху вниз
+          (margin-bottom) зліва на право. Значення можуть бути від'ємними! НЕ
+          успадковується
+        </p>
+        <div class="margin">
+          <p class="margin-all">Значенням "margin: 20px;" з усіх сторін</p>
+          <p class="margin-vertical">
+            Значенням "margin: 30px;" зверху та знизу сторін
+          </p>
+          <p class="margin-collapsing">Схлопування "margin"</p>
+          <p class="margin-left">Від'ємний "margin"</p>
+        </div>
+      </section>
+      <!-- Властивості для висоти -->
+      <section>
+        <h2>Властивості для висоти</h2>
+        <p>
+          Властивість height — встановлює чітку висоту блочних (блочно-рядкових)
+          тегів. Не успадковується.
+        </p>
+        <div class="height">
+          <div class="height-auto">
+            <p>
+              Властивість **`height`** — встановлює **чітку висоту** блочних
+              (блочно-рядкових) тегів. **Не успадковується.** **НЕ працює зі
+              рядковими об'єктами.** - ***auto*** - (**за замовченням**)
+              автоматичний розмір.
+            </p>
+          </div>
+          <div class="min-height">
+            Властивість **`min-height`** — встановлює **мінімальну висоту**
+            блочних (блочно-рядкових) тегів, тобто блок не буде меншим за
+            вказану висоту. **Не успадковується.** **НЕ працює зі рядковими
+            об'єктами.**
+          </div>
+          <div class="max-height">
+            Властивість max-height — встановлює максимальну висоту блочних
+            (блочно-рядкових) тегів, тобто блок не буде більшим за вказану
+            висоту. Не успадковується. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minus laborum cumque neque autem provident nisi,
+            nesciunt perspiciatis ipsum magni, veritatis animi illum mollitia
+            molestiae illo dolorem itaque. Impedit, vel. At. Lorem ipsum dolor
+            sit, amet consectetur adipisicing elit. Aut aliquam recusandae,
+            molestias ducimus necessitatibus labore nobis fuga expedita ad
+            nesciunt in aperiam cupiditate quia sint! Quam sit aliquam
+            cupiditate voluptatum.
+          </div>
+        </div>
+      </section>
+      <!-- Властивості для ширини -->
+      <section>
+        <h2>Властивості для ширини</h2>
+        <p>
+          Властивість width — чітко задає ширину блочного (блочно-рядкового)
+          об'єкту, НЕ працює з рядковими об'єктами
+        </p>
+
+        <div class="width">
+          <div class="max-width">
+            Властивість max-height — встановлює максимальну висоту блочних
+            (блочно-рядкових) тегів, тобто блок не буде більшим за вказану
+            висоту. Не успадковується.
+          </div>
+
+          <div class="min-width">
+            Властивість min-height — встановлює мінімальну висоту блочних
+            (блочно-рядкових) тегів, тобто блок не буде меншим за вказану
+            висоту. Не успадковується.
+          </div>
+
+          <div class="overflow-visible">
+            visible — відображається увесь контент елемента, навіть за межами
+            встановлених розмірів (за замовченням); Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aut, repudiandae quia dignissimos
+            obcaecati ab similique!
+          </div>
+
+          <div class="overflow-hidden">
+            hidden — відображається тільки контент всередині (блоку) елемента,
+            все інше буде сховано; Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ipsa, facilis!
+          </div>
+
+          <div class="overflow-scroll">
+            scroll — завжди додаються смужки прокрутки; Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Eius dolorem velit nesciunt
+            repellendus praesentium sit? Culpa quibusdam eum exercitationem
+            provident, consequuntur minima molestiae rerum repellendus illo, nam
+            obcaecati, iusto corporis. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.
+          </div>
+
+          <div class="overflow-auto">
+            auto — смужки прокрутки додаються лише за необхідністю (якщо контент
+            не вміщується всередині вказаних розмірів блоку). Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Voluptatum consequuntur
+            asperiores consequatur optio magni dolorum et harum repudiandae? Cum
+            alias, praesentium odit nisi veniam eos deserunt eligendi dolorum
+            voluptatum commodi!
+          </div>
+        </div>
+      </section>
+
+      <section class="aside">
+        <p class="slogan">New Arrival</p>
+        <h2 class="title">
+          Discover Our <br />
+          New Collection
+        </h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis.
+        </p>
+        <a class="button" href="#">Buy now</a>
+      </section>
+    </main>
+  </body>
+</html>
