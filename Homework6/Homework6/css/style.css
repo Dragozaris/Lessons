@@ -1,0 +1,273 @@
+body{
+    color: #000000;
+    font-family: "Barlow", sans-serif;
+}
+
+main{
+    background-attachment: fixed;
+    background-image: url(../img/fon.jpg);
+}
+
+h1{
+    font-weight:800;
+    font-size: 30px;
+    
+}
+
+h2{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+p{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+ul{
+    margin-bottom: 10px;
+}
+
+li{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+
+.headline{
+    max-width: 1440px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.headline__solid{
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 5px solid rgb(209, 112, 0);
+}
+
+.headline__dotted {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 5px dotted rgb(209, 112, 0);
+}
+.headline__dashed {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 5px dashed rgb(209, 112, 0);
+}
+.headline__double {
+    padding: 15px;
+    border: 5px double rgb(209, 112, 0);
+    margin-bottom: 10px;
+}
+
+.headline__different{
+    padding: 15px;
+    border-top: solid 5px rgb(209, 112, 0);
+    border-right: dotted 5px rgb(209, 112, 0);
+    border-bottom: dashed 5px rgb(209, 112, 0);
+    border-left: double 5px rgb(209, 112, 0);
+}
+
+.headline__outline{
+    border-top: solid rgb(209, 112, 0);
+    border-right: dotted rgb(209, 112, 0);
+    border-bottom: dashed rgb(209, 112, 0);
+    border-left: double rgb(209, 112, 0);
+    background-color: #1b2204;
+}
+
+.headline__shadow{
+    box-shadow: 5px 5px 20px 10px rgba(231, 9, 9, 0.911);
+}
+
+.background_box1{
+    padding: 20px;
+    height: 1000px;
+    background-size: 350px;
+    background-image: url(../img/usa.jpg);
+
+}
+
+
+.background_box2{
+    padding: 20px;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/usa.jpg);
+
+}
+.background_box3{
+    padding: 20px;
+    background-image: url(../img/usa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Макет 1 */
+
+.page-header {
+
+
+    
+    padding-top: 61px;
+    padding-bottom: 61px;
+    text-align: center;
+
+    background-image: url(../img/rectangle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+.title {
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.breadcrumbs {
+    text-align: center;
+}
+
+.breadcrumbs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.breadcrumbs-item {
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background-image: url('../img/arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+/* Макет 2 */
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner__content {
+    
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 85px;
+}
+.banner__title {
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #f9efec;
+    margin-bottom: 17px;
+
+
+}
+.banner__link {
+    font-family: "RobotoFlex", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+
+    border-radius: 12px;
+    background-color: #0A84FF;
+    padding: 13px 78.5px;
+    
+    
+}
+
+/* Макет 3 */
+
+.content {
+    max-width: 834px;
+    padding: 32px;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: #b3b3b2;
+    margin: 0 auto;
+
+}
+.content__section {
+    margin-bottom: 24px ;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #b3b3b2;
+}
+
+
+.content__section:last-child {
+    margin-bottom: 0;
+}
+
+.content__subtitle {
+    margin-bottom: 12px;
+    color: #f9efec;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+
+.content__item {
+    padding-left: 26px;
+    margin-bottom: 12px;
+    background-image: url(../img/icon.svg);
+    min-height: 16px;
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+}
+.content__item:last-child{
+    margin-bottom: 0px;
+}
+
+.content__text {
+    margin-bottom: 34px;
+}
+
+.content__text:last-child {
+    margin-bottom: 0;
+}
