@@ -1,0 +1,125 @@
+body{
+    background-color: #e4d4d4;
+}
+main {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: center;
+
+    font-family: "Pangolin", sans-serif;
+    font-weight: 400;
+    
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+p:first-of-type {
+    font-style: italic;
+    font-size: 16px;
+    background: #e1f5fe;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.2;
+}
+    
+
+.logo {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    
+}
+
+
+.logo img {
+    vertical-align: middle;
+
+}
+
+.logo p {
+    display: inline-block; 
+    text-align: center;
+}
+
+.vector{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.vector img:not(:last-child) {
+    margin-right: 5px;
+}
+
+.vector p{
+    margin-bottom: 10px;
+}
+
+.banner{
+    margin-bottom: 30px;
+}
+.banner img{
+    margin-bottom: 10px;
+}
+
+
+
+.gallery-block{
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;            
+    margin: 10px;    
+    
+}
+
+.gallery img{
+    margin-bottom: 10px;
+    border-radius: 3%;         
+}
+
+.picture{
+    margin-top: 10px;
+}
+
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+
+ul {
+    background: #f9f9f9;
+    padding: 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+strong {
+    color: #e67e22;
+}
+
+span {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #c0392b;
+}
+
+

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>Урок №8 - Web-графіка</h1>
+      <div class="logo">
+        <img src="img/logo.avif" alt="Логотип" />
+        <p>Контентне зображення PNG > AVIF</p>
+      </div>
+      <div class="vector">
+        <p>Векторна графіка SVG</p>
+        <img src="img/heart.svg" alt="Іконка обраного" />
+        <img src="img/outline.svg" alt="Іконка профілю" />
+        <img src="img/search.svg" alt="Іконка пошуку" />
+        <img src="img/shopping.svg" alt="Іконка кошику" />
+      </div>
+
+      <div class="banner">
+        <img src="img/banner.avif" alt="Зображення банеру" />
+        <p>Контентне зображенняJPEG > AVIF</p>
+      </div>
+
+      <div class="gallery-block">
+        <div class="gallery">
+          <img src="img/image1.avif" alt="Зображення кухні" />
+          <p>
+            Контентне зображення, <br />
+            JPEG > AVIF
+          </p>
+        </div>
+        <div class="gallery">
+          <img src="img/image2.avif" alt="Зображення залу" />
+          <p>
+            Контентне зображення, <br />
+            JPEG > AVIF
+          </p>
+        </div>
+        <div class="gallery">
+          <img src="img/image3.avif" alt="Зображення спальні" />
+          <p>
+            Контентне зображення, <br />
+            JPEG > AVIF
+          </p>
+        </div>
+      </div>
+
+      <!-- Розширення та якість зображення -->
+      <div>
+        <picture>
+          <source
+            srcset="img/img.webp 1x, img/img-2x.webp 2x, img/img-3x.webp 3x"
+          />
+          <img src="img/img.webp" alt="Зображення банеру" />
+        </picture>
+        <p class="picture">
+          Контентне зображення, JPEG 1x, JPEG 2x, JPEG 3x ~ AVIF 1x, AVIF 2x,
+          AVIF 3x
+        </p>
+      </div>
+
+      <div>
+        <h2>Веб-графіка: Головне для розробника</h2>
+        <p>
+          <strong>Ключовий підхід:</strong> Ми завжди шукаємо компроміс.
+          Картинка має бути максимально якісною, але при цьому важити якомога
+          менше (байти вирішують все), щоб сайт "літав".
+        </p>
+
+        <h2>Сучасні растрові формати:</h2>
+        <ul>
+          <li>
+            <strong>JPEG/JPG:</strong> Тільки для фотографій. Головний мінус —
+            не знає, що таке прозорість або анімація.
+          </li>
+          <li>
+            <strong>PNG:</strong> Використовуємо, коли потрібен "дирявий" фон
+            (прозорість), але пам'ятаємо, що такі файли зазвичай важкуваті.
+          </li>
+          <li>
+            <strong>WEBP:</strong> Крута заміна попереднім двом. Вміє і в
+            прозорість, і в анімацію, при цьому важить набагато менше.
+          </li>
+          <li>
+            <strong>AVIF:</strong> Найновіший і найлегший формат. Хоча
+            стандартна Figma його ще не видає при експорті, він — номер один за
+            економністю місця.
+          </li>
+          <li>
+            <strong>GIF:</strong> Старий формат для анімацій, який зараз майже
+            не використовують, бо він занадто "жирний" за вагою.
+          </li>
+        </ul>
+
+        <h2>Вектор (SVG):</h2>
+        <p>
+          Це не пікселі, а математика. Масштабуй як хочеш — чіткість не
+          втратиться. Ідеально для лого та іконок.
+        </p>
+        <h2>Категорії графіки за призначенням:</h2>
+        <ul>
+          <li>
+            <strong>Іконки:</strong> Маленькі та прості. Зазвичай це SVG. Можна
+            ставити як через <span>img</span>, так і кодом прямо в HTML або
+            через CSS.
+          </li>
+          <li>
+            <strong>Дизайнерські елементи:</strong> Всякі плашки, декоративні
+            фони та візерунки. Можуть бути і вектором, і растром. Найчастіше ми
+            їх закидаємо у фони через CSS.
+          </li>
+          <li>
+            <strong>Контентні зображення:</strong> Це саме зміст сторінки
+            (наприклад, фото товару в магазині). Тут працює правило: беремо
+            оригінал (JPG/PNG) і обов'язково переганяємо у WEBP або AVIF. У код
+            вставляємо тільки через тег <span>img</span>.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
