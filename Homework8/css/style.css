@@ -1,21 +1,33 @@
 body{
     background-color: #e4d4d4;
 }
-main {
+main, header, footer{
     max-width: 800px; 
     margin: 0 auto; 
-    padding: 20px;
     text-align: center;
 
     font-family: "Pangolin", sans-serif;
     font-weight: 400;
-    
+    font-size: 16px;
 }
 
-h1{
+.footer{
+    background: #e1f5fe;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.2;
+}
+
+
+.page-header{
     font-size: 30px;
     line-height: 1.5;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
 }
+
+
 
 
 p:first-of-type {
@@ -28,12 +40,10 @@ p:first-of-type {
 }
     
 
+
 .logo {
-    text-align: center;
     padding: 10px 0;
     margin-bottom: 10px;
-
-    
 }
 
 
@@ -105,6 +115,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     text-align: left;
+    margin-bottom: 10px;
 }
 
 li:not(:last-child) {
