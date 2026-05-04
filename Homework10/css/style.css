@@ -1,0 +1,277 @@
+.wrapper {
+    font-family: "Pangolin", sans-serif;
+    color: #f9efec;
+}
+
+body {
+    background-color: #e4d4d4;
+}
+
+
+
+main {
+    margin-top: 70px;
+}
+
+[class*="__container"] {
+    max-width: 834px;
+    margin: 0 auto;
+    padding: 32px;
+    background: #1a1a1a;
+}
+
+.footer{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.footer__link{
+    padding: 20px;
+    color: #000;
+}
+
+
+/* Навігація */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 50;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    position: relative; 
+    margin-right: 30px;
+}
+
+.nav__item:last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    padding: 15px 0;
+
+    font-family: "Pangolin", sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+/* Стилі */
+.nav__dropdown,
+.nav__submenu {
+    position: absolute;
+    background-color: #f5ede3;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 180px;
+    z-index: 100;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    
+    opacity: 0;
+}
+
+/* Позиціонування першого рівня */
+.nav__dropdown {
+    top: 100%;
+    left: 0;
+}
+
+/* Позиціонування другого рівня */
+.nav__dropdown-item {
+    position: relative;
+}
+
+.nav__submenu {
+    top: 0;
+    left: 100%;
+}
+
+
+.nav__item:hover > .nav__dropdown,
+.nav__dropdown-item:hover > .nav__submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.nav__dropdown-link,
+.nav__submenu-link {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left; 
+    transition: background-color 0.2s;
+}
+
+.nav__dropdown-link:hover,
+.nav__submenu-link:hover {
+    background-color: #e2d5c5;
+    text-decoration: underline;
+}
+
+
+
+
+/* Список з макету */
+
+.page__container{
+    margin-bottom: 20px;
+}
+
+.responsibilities {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.5;
+}
+.responsibilities__title {
+    margin-bottom: 12px;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: #f9efec;
+}
+
+.responsibilities__list {
+}
+
+.responsibilities__item {
+    position: relative;
+    padding-left: 26px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #b3b3b2;
+}
+
+.responsibilities__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.responsibilities__item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url('../img/icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/* Позіціонування */
+
+
+.content__container {
+    max-width: 500px;
+    max-height: 500px;
+    overflow: auto; 
+    margin: 40px auto; 
+    background: #1a1a1a;
+    padding: 0 32px 32px 32px; 
+    border-radius: 8px; 
+}
+
+
+.content__section:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.content__subtitle {
+    position: sticky; 
+    top: 0;            
+    z-index: 10;       
+    background-color: #1a1a1a; 
+    padding: 20px 0;      
+    
+    color: #ffffff;
+    text-align: center;
+    font-family: "Pangolin", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
+.content__section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6; 
+    color: #b3b3b2;
+
+}
+
+.parent {
+    text-align: center;
+
+
+}
+
+.child1,
+.child2,
+.child3,
+.child4 {
+    display: inline-block;
+
+}
+
+
+.child1 {
+    
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: orangered;
+}
+.child2 {
+    z-index: -1;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    
+    width: 100px;
+    height: 100px;
+
+    background-color: green;
+}
+.child3 {
+    position: relative;
+    right: -25px;
+    bottom: 50px;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: yellow;
+}
+.child4 {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: purple;
+}
