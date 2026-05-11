@@ -1,0 +1,263 @@
+.space {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+
+    background-image: 
+        
+        radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 100px 150px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 300px 100px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2.5px 2.5px at 200px 400px, #fff, rgba(0,0,0,0)),
+        
+        
+        linear-gradient(180deg, #020205 0%, #0b0d17 70%, #1a1c2c 100%);
+    
+    
+    background-size: 
+        150px 150px, 
+        250px 250px, 
+        400px 400px, 
+        550px 550px,
+        100% 100%; 
+        
+    background-repeat: repeat, repeat, repeat, repeat, no-repeat;
+    
+    z-index: 1;
+}
+
+
+.space__container {
+    position: relative;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.moon{
+    width: 150px;
+    height: 150px; 
+
+    background-image: url("../img/moon.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    position: absolute;
+    top: 8%;
+    left: 8%;
+}
+
+.earth {
+    width: 400px; 
+    height: 400px;
+
+    background-image: url("../img/eath.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);     
+}
+
+
+
+.rocket {
+
+    width: 50px;
+    height: 120px;
+
+
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 3;
+    
+    transition: all 3s ease-in-out;
+}
+
+.rocket__body {
+    width: 100%;
+    height: 100%;
+    background-color: #d1d1d1;
+
+    border-radius: 50% 50% 15% 15%;
+
+    position: relative;
+}
+
+.rocket__porthole {
+    width: 20px;
+    height: 20px;
+
+    background: radial-gradient(circle at 30% 30%, #5dade2, #2874a6);
+    border: 2px solid #7f8c8d;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.porthole1 {
+    top: 25px;
+}
+
+.porthole2 {
+    top: 50px;
+}
+
+.porthole3 {
+    top: 75px;
+}
+
+.rocket__fastening {
+    width: 20px;
+    height: 35px;
+
+    background-color: #a0a0a0;
+
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.rocket__fastening--left {
+    left: -15px;
+
+    border-radius: 100% 0% 0% 20%; 
+}
+
+
+.rocket__fastening--right {
+    right: -15px;
+
+    border-radius: 0% 100% 20% 0%; 
+}
+
+
+.rocket__fire {
+    width: 30px;
+    height: 40px;
+
+    background: linear-gradient(to bottom, orangered, yellow);
+    border-radius: 0% 0% 50% 50%;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+
+
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -2;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.space:hover .rocket__fire {
+    opacity: 1;
+}
+
+
+
+@keyframes moon-landing {
+    0% {
+        transform: translateX(-50%) translate(0, 0) rotate(0deg);
+    }
+    40% {
+        transform: translateX(-50%) translate(-150px, -300px) rotate(-45deg);
+    }
+    80% {
+        transform: translateX(-50%) translate(-380px, -400px) rotate(-10deg);
+    }
+    100% {
+        transform: translateX(-50%) translate(-400px, -600px) rotate(170deg);
+    }
+}
+
+.space:hover .rocket {
+    animation: moon-landing 5s ease-in-out forwards;
+}
+
+
+.rocket {
+    transition: none; 
+}
+
+@keyframes fire-work {
+    0%, 80% { opacity: 1; }
+    100% { opacity: 0; } 
+}
+
+.space:hover .rocket__fire {
+    animation: fire-work 5s forwards;
+}
+
+.spaceman {
+    width: 45px;
+    height: 70px;
+    background-image: url('../img/yevhen.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    position: absolute;
+
+    top: 8%;
+    left: 12%;
+    
+    opacity: 0;
+    transform: none;
+
+    transition: opacity 0.5s ease-out;
+    z-index: 2;
+}
+
+.space:hover .spaceman {
+    opacity: 1;
+    transition-delay: 5s; 
+}
+
+.message {
+    position: absolute;
+
+    top: 3%;
+    left: 4%;
+    width: 250px;
+    
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+    z-index: 10;
+}
+
+
+.space:hover .message {
+    opacity: 1;
+    transform: translateY(0);
+    
+
+    transition-delay: 6s; 
+}
