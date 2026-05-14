@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="top" class="header">
+        <div class="header__container">
+          <h1 class="header__title">Заняття 13 модуль Flex</h1>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <section class="page__browse">
+            <div class="page__info">
+              <h2 class="page__title">Browse The Range</h2>
+              <p class="page__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div class="page__gallery">
+              <div class="gallery-item">
+                <img
+                  class="gallery-item__img"
+                  src="img/dining.webp"
+                  alt="Dining"
+                />
+                <p class="gallery-item__text">Dining</p>
+              </div>
+              <div class="gallery-item">
+                <img
+                  class="gallery-item__img"
+                  src="img/living.webp"
+                  alt="Living"
+                />
+                <p class="gallery-item__text">Living</p>
+              </div>
+              <div class="gallery-item">
+                <img
+                  class="gallery-item__img"
+                  src="img/bedroom.webp"
+                  alt="Bedroom"
+                />
+                <p class="gallery-item__text">Bedroom</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="page__products products">
+            <div class="products__container">
+              <h2 class="products__main-title">Our Products</h2>
+              <div class="products__grid">
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/syltherine.jpg" alt="syltherine" />
+                    <span class="products__badge products__badge--sale"
+                      >-30%</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 2.500.000</span>
+                      <span class="products__price-old">Rp 3.500.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/leviosa.jpg" alt="leviosa" />
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 2.500.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/lolito.jpg" alt="lolito" />
+                    <span class="products__badge products__badge--sale"
+                      >-50%</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 7.000.000</span>
+                      <span class="products__price-old">Rp 14.000.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/respira.jpg" alt="respira" />
+                    <span class="products__badge products__badge--new"
+                      >New</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 500.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/grifo.jpg" alt="grifo" />
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 1.500.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/muggo.jpg" alt="muggo" />
+                    <span class="products__badge products__badge--new"
+                      >New</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 150.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/pingky.jpg" alt="pingky" />
+                    <span class="products__badge products__badge--sale"
+                      >-50%</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 7.000.000</span>
+                      <span class="products__price-old">Rp 14.000.000</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__item">
+                  <div class="products__overlay">
+                    <div class="button button--primary">Add to cart</div>
+                    <div class="products__action">
+                      <a href="#"
+                        ><img src="img/share.svg" alt="share" />Share</a
+                      >
+                      <a href="#"
+                        ><img src="img/compare.svg" alt="compare" />compare</a
+                      >
+                      <a href="#"><img src="img/like.svg" alt="like" />like</a>
+                    </div>
+                  </div>
+                  <div class="products__img">
+                    <img src="img/potty.jpg" alt="potty" />
+                    <span class="products__badge products__badge--new"
+                      >New</span
+                    >
+                  </div>
+                  <div class="products__info">
+                    <h3 class="products__title">Syltherine</h3>
+                    <p class="products__text">Stylish cafe chair</p>
+                    <div class="products__prices">
+                      <span class="products__price">Rp 500.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button button--outline">Show More</div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <a class="footer__top" href="#top">На гору</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
