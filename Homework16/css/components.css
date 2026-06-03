@@ -151,7 +151,7 @@ recipes /* Верх секції */
     background: url("../img/products/star.png") no-repeat center, 
                 radial-gradient(50% 50% at 50% 50%, #2b5c43 0%, #1a3d2b 100%);
     background-size: cover;
-    border-radius: 30px; 
+    border-radius: 0px; 
     padding: 40px 16px 24px; 
 }
 
