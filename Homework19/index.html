@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container"></div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <!-- Герой -->
+          <section class="page__hero hero">
+            <div class="hero__content">
+              <div class="hero__badge-wrapper">
+                <img class="hero__badge" src="img/badge.png" alt="Handpicked" />
+              </div>
+              <div class="hero__tag">
+                <a class="hero__link" href="#"
+                  ><img src="img/hot_recipes.jpg" alt="hot_recipes" />
+                  <span>Hot Recipes</span></a
+                >
+              </div>
+              <div>
+                <h1 class="hero__title">Spicy delicious chicken wings</h1>
+                <p class="hero__text">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+              <ul class="hero__meta">
+                <li class="meta-item">
+                  <img src="img/timer.svg" alt="" />
+                  <span>30 Minutes</span>
+                </li>
+                <li class="meta-item">
+                  <img src="img/fork-knife.svg" alt="" />
+                  <span>Chicken</span>
+                </li>
+              </ul>
+              <div class="hero__author">
+                <figure class="hero__other">
+                  <img src="img/human.webp" alt="human" />
+                  <figcaption class="hero__info">
+                    <span class="hero__name">John Smith</span>
+                    <span class="hero__date">15 March 2022</span>
+                  </figcaption>
+                </figure>
+                <button class="hero__button btn" type="button">
+                  <span class="categories-recipes">View Recipes</span>
+                  <img src="img/play.svg" alt="play" />
+                </button>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img src="img/baked-chicken.webp" alt="baked-chicken" />
+            </div>
+          </section>
+          <!-- Категорії -->
+          <section class="page__categories categories">
+            <div class="categories__header">
+              <h2 class="categories__subtitle">Categories</h2>
+              <button class="categories__button btn" type="button">
+                View All Categories
+              </button>
+            </div>
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/breakfast.webp"
+                      alt="Breakfast"
+                    />
+                  </div>
+                  <span class="categories__name">Breakfast</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/vegan.webp"
+                      alt="Vegan"
+                    />
+                  </div>
+                  <span class="categories__name">Vegan</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/meat.webp"
+                      alt="Meat"
+                    />
+                  </div>
+                  <span class="categories__name">Meat</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/dessert.webp"
+                      alt="Dessert"
+                    />
+                  </div>
+                  <span class="categories__name">Dessert</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/lunch.webp"
+                      alt="Lunch"
+                    />
+                  </div>
+                  <span class="categories__name">Lunch</span>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__image-wrapper">
+                    <img
+                      class="categories__image"
+                      src="img/chocolate.webp"
+                      alt="Chocolate"
+                    />
+                  </div>
+                  <span class="categories__name">Chocolate</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- Рецепти -->
+          <section class="page__recipes recipes">
+            <div class="recipes">
+              <div class="recipes__header">
+                <h2 class="recipes__title">Simple and tasty recipes</h2>
+                <p class="recipes__description">
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+
+              <div class="recipes__grid">
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/cheeseburger.jpg"
+                        alt="Beef Cheeseburger"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/fish.jpg"
+                        alt="Fish dish"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/pancake-honey.jpg"
+                        alt="Pancake with honey"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/salad.jpg"
+                        alt="Salad"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/chicken-meatballs.jpg"
+                        alt="Chicken meatballs"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card card--promo">
+                  <h3 class="card__promo-title">
+                    Don't forget to eat healthy food
+                  </h3>
+                  <img
+                    class="card__promo-image"
+                    src="img/products/promo.png"
+                    alt="Healthy dish"
+                  />
+                  <span class="card__promo-site">www.foodieland.com</span>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/pancake-blueberry.jpg"
+                        alt="Pancake with blueberry"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/chicken-rice.jpg"
+                        alt="Chicken with rice"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="card">
+                  <div class="card__header">
+                    <a class="card__image-link" href="#">
+                      <img
+                        class="card__image"
+                        src="img/products/bacon-pasta.jpg"
+                        alt="Bacon pasta"
+                      />
+                    </a>
+                    <div class="card__labels">
+                      <a class="card__favorite" href="#">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z"
+                            fill="#DBE2E5"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <h3 class="card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                    <div class="card__meta">
+                      <div class="card__time">
+                        <img
+                          class="card__icon"
+                          src="img/icons/timer.svg"
+                          alt="Cooking time"
+                        />
+                        <span class="card__text">30 Minutes</span>
+                      </div>
+                      <div class="card__category">
+                        <img
+                          class="card__icon"
+                          src="img/icons/knife.svg"
+                          alt="Category"
+                        />
+                        <span class="card__text">Snack</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- Шеф -->
+          <section class="page__info-chef info-chef">
+            <div class="info-chef__content">
+              <h2 class="info-chef__title">
+                Everyone can be a chef in their own kitchen
+              </h2>
+
+              <div class="info-chef__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+
+              <a class="info-chef__link btn" href="#">Learn More</a>
+            </div>
+
+            <div class="info-chef__media">
+              <div class="info-chef__bg"></div>
+              <img
+                class="info-chef__image"
+                src="img/chef.webp"
+                alt="Professional Chef"
+              />
+              <div class="info-chef__decor">
+                <img
+                  class="info-chef__item info-chef__item--tomato"
+                  src="img/decor/tomato.webp"
+                  alt="tomato"
+                />
+                <img
+                  class="info-chef__item info-chef__item--meat"
+                  src="img/decor/meat.webp"
+                  alt="meat"
+                />
+                <img
+                  class="info-chef__item info-chef__item--onion"
+                  src="img/decor/onion.webp"
+                  alt="onion"
+                />
+                <img
+                  class="info-chef__item info-chef__item--salad"
+                  src="img/decor/salad.webp"
+                  alt="salad"
+                />
+              </div>
+            </div>
+          </section>
+          <!-- Інста -->
+        </div>
+
+        <section class="page__instagram instagram">
+          <div class="instagram__container">
+            <div class="instagram__header">
+              <h2 class="instagram__subtitle">
+                Check out @foodieland on Instagram
+              </h2>
+              <div class="instagram__text">
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqut enim
+                ad minim
+              </div>
+            </div>
+            <div class="instagram__posts">
+              <div class="instagram__post">
+                <img src="img/post-instagram/post-1.webp" alt="Пост з їжею" />
+              </div>
+              <div class="instagram__post">
+                <img src="img/post-instagram/post-2.webp" alt="Пост з їжею" />
+              </div>
+              <div class="instagram__post">
+                <img src="img/post-instagram/post-3.webp" alt="Пост з їжею" />
+              </div>
+              <div class="instagram__post">
+                <img src="img/post-instagram/post-4.webp" alt="Пост з їжею" />
+              </div>
+            </div>
+
+            <a class="instagram__button btn" href="#"
+              ><span>Visit Our Instagram</span
+              ><img src="img/post-instagram/instagram.svg" alt="" />
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

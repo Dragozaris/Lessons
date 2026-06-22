@@ -1,0 +1,64 @@
+
+@media (max-width: 1024px) {
+    .hero { flex-direction: column; min-height: auto; }
+
+    .hero__badge-wrapper {
+    position: absolute;
+    right: 0;
+    transform: translateX(-70%);}
+
+    .hero__title{margin-right: 8rem;;}
+
+    .categories__list { justify-content: center; gap: 1.5rem; }
+    .card, .card--promo { flex: 1 1 calc(50% - 2.5rem); }
+    
+    .info-chef { gap: 2rem; }
+    .info-chef__media { flex: 0 0 50%; }
+    
+    .instagram__posts { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+}
+
+
+@media (max-width: 767px) {
+    .hero { flex-direction: column; min-height: auto; }
+    .hero__title{
+        margin-right: 0px;
+    }
+    .hero__badge-wrapper {
+        display: none;
+    }
+
+    
+
+    .hero__title { font-size: 2.2rem; text-align: center; }
+    .hero__image { order: -1; min-width: 100%; border-radius: 50px; overflow: hidden;}
+    .hero__author { flex-direction: column; gap: 1rem; margin-top: 2rem; align-items: center; }
+    .hero__button { width: 100%; justify-content: center; }
+
+
+    .page__categories { margin-bottom: 5rem; }
+    .categories__header { flex-direction: column; gap: 1rem; margin-bottom: 2rem; text-align: center; }
+    .categories__subtitle { font-size: 2rem; }
+    .categories__list { gap: 1rem; justify-content: center; }
+    .categories__link { width: 8rem; height: 9.5rem; border-radius: 1.5rem; padding-top: 1rem; }
+    .categories__image { width: 60px; height: 60px; }
+    .categories__name { font-size: 0.875rem; margin-bottom: 10px; }
+
+
+    .card, .card--promo { flex: 1 1 100%; }
+    .recipes__title { font-size: 2rem; }
+
+    
+    .page__info-chef { margin-bottom: 5rem; }
+    .info-chef { flex-direction: column; text-align: center; }
+    .info-chef__content { align-items: center; }
+    .info-chef__title { font-size: 2rem; margin-bottom: 1rem; }
+    .info-chef__media { flex: 0 0 100%; height: auto; padding-bottom: 1rem; }
+    .info-chef__bg { height: 95%; border-radius: 1.875rem; }
+    .info-chef__item { width: 10%; }
+
+
+    .instagram__posts { grid-template-columns: 1fr; gap: 1rem; }
+    .instagram__subtitle { font-size: 2rem; }
+    .instagram__container { gap: 1.5rem; }
+}
